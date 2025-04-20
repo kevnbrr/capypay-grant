@@ -1,27 +1,36 @@
-# Name of your Project
+# CapyPay 
 
 ## Project Overview
+![CapyPay Logo](https://github.com/user-attachments/assets/077d0c49-d3b8-4a16-8e79-b362bf61e8e0)
 
-Please provide the following:
-
-- If the name of your project is not descriptive, a tagline (one sentence summary)
-- A brief description of your project
-- An indication of how your project relates to / integrates into Polkadot (SDK) / Kusama
-- An indication of why your team is interested in creating this project
+CapyPay aims to start as a crowdfunding website allowing creators to receive funding on-chain for their projects (both digital and physical) by people who truly support their vision. We will provide lower fees compared to KickStarter, the go-to web2 competitor, and provide creators with the opportunity to KYC (which should increase the trust of the donnors and lead to increased donations).   
 
 ### Project Details
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
+Project Overview
 
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- What your project is *not* or will *not* provide or implement
-  - This is a place for you to manage expectations and clarify any limitations that might not be obvious
+One-liner: "Kickstarter on chain!"
 
-### Ecosystem Fit
+Description: Creators launch campaigns with funding goals and specific milestones. Backer's will donate to these campaigns. Once the campaign is fully funded, the creators will receive gradualy payouts once a milestone is comleted. The platform will require a minimum of 2 milestones per campaign to prevent creators from rugging and running away with 100% of the donated funds. 
+
+Technical Stack
+  Hosting: Vercel 
+  Frontend: Next.js + React, Polkadot.js API for blockchain interactions 
+  Smart Contracts: ink! on Substrate Contracts
+
+What will be completed:
+- Completed front-end with full users functionality allowing the user to fund campaigns
+  - Users will also be able to create campaigns, set campaign goals (including milestones), upload photos (1-5) to support the campaign, and upload a YouTube video if needed
+- Completed backend system that handles user signup/login, securely store user data and campaign data, smart contract integration to ensure the frontend properly displays the funding goal (at or near real-time)
+- Smart contracts will be completed and launched on testnet
+- Twitter will be created and start posting at least 2 times per week
+
+What will not be completed at the current stage:
+- Mainnet deploymented (may be deployed but depends on the launch fees so TBD)
+- No cross-chain functionality at the current stage
+- No on/off-ramp functionality (users will be directed to reputable CEXs) 
+
+### Ecosystem Fit TODO TODO!!!
 
 Help us locate your project in the Polkadot/Kusama landscape and what problems it tries to solve by answering each of these questions:
 
@@ -36,35 +45,31 @@ Help us locate your project in the Polkadot/Kusama landscape and what problems i
 
 ## Team
 
-> Please note that the data provided in this section is for administrative and informational purposes only. All beneficiaries of a grant must also be listed in the KYC/KYB process during the application phase.
-
-- **Team Name:** Name of your team. If you apply as a legal entity, please use its name.
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email
-- **Website:** Your website, GitHub org, blog, or similar
+- **Team Name:** CapyPay
+- **Contact Name:** Kevin Rodriguez-Romero
+- **Contact Email:** kbr2125@columbia.edu
+- **Website:** https://github.com/kevnbrr
 
 ### Team members
 
-Please list the legal name of all grant beneficiaries.
+Kevin Rodriguez-Romero (Solo-Founder)
 
 #### LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/{person_1}
-- https://www.linkedin.com/{person_2}
+- https://www.linkedin.com/in/kevnbrr/
 
 ### Team Code Repos
 
-- https://github.com/{your_organisation}/{project_1}
-- https://github.com/{your_organisation}/{project_2}
-
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere are also fine.
-
-- https://github.com/{team_member_1}
-- https://github.com/{team_member_2}
+- https://github.com/kevnbrr/solana-sweepstakes
+- https://github.com/kevnbrr/solana-builder-challenge-day-1
+- https://github.com/kevnbrr/solana-builder-challenge-day-2
+- https://github.com/kevnbrr/solana-builder-challenge-day-4
 
 ### Team's experience
 
-Please describe the team's relevant experience, such as Polkadot-related projects in progress or contributions to the ecosystem made by team members in the past.
+- Currently completing a CS minor at Columbia University and the president for Blockchain at Columbia
+- Built Solana‑based lottery and casino MVPs
+- Completed an in-person Solana bootcamp with live testnet contract deployments
 
 ## Development Status
 
